@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Eras - Colorful World</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #e0f7fa;
+            font-family: 'Avenir Light', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .myparagraph {
+            color: rgb(49, 49, 66);
+            margin: 30px 30px;
+            font-family: 'Avenir Light', sans-serif;
+        }
+        .myheading {
+            color: #42426c;
+            margin-top: 50px;
+            text-align: center;
+            font-family: 'Avenir';
+    
+        }
+        header {
+            font-family: 'Avenir Light', sans-serif;
+            background-color: #ff6699;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            font-family: 'Avenir Light';
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 50px 20px;
+            position: relative;
+            font-family: 'Avenir Light';
+            color:rgb(66, 66, 108);
+        }
+        .gallery-item {
+            position: relative;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.5s;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .moving-graphic {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: move 10s infinite alternate;
+        }
+        @keyframes move {
+            0% { transform: translate(-50%, 0); }
+            100% { transform: translate(-50%, 30px); }
+        }
+        .ball {
+            width: 15px;
+            height: 15px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            position: absolute;
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-15px); }
+        }
+        footer {
+            background-color: #ff6699;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-family: 'Avenir Light', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Eras</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="erasabout.html">About</a></li>
+                <li><a href="eras.html">The Eras</a></li>
+                <li><a href="tourculture.html">Tour Culture</a></li>
+                <li><a href="momentseras.html">Moments</a></li>
+                <li><a href="upcomingshows.html">Upcoming Shows</a></li>
+            </ul>
+        </nav>
+        <div class="moving-graphic">
+            <div class="ball" style="animation-delay: 0s;"></div>
+            <div class="ball" style="animation-delay: 0.2s;"></div>
+            <div class="ball" style="animation-delay: 0.4s;"></div>
+        </div>
+    </header>
+<h3 class="myheading">AN INTRO TO THE ERAS</h3>
+<p class="myparagraph">The Eras Tour by Taylor Swift is a concert production that showcases her musical 
+    evolution across different phases of her career. Each "era" represents a specific 
+    album and its unique themes, styles, and visuals. From her country roots  
+    to the pop anthems and the introspective vibes of sister albums "Folklore" and "Evermore," 
+    the tour celebrates her diverse artistry. The show features elaborate staging, costumes, and 
+    setlists that reflect the distinct identity of each album, allowing fans to experience the 
+    breadth of her work in a vibrant and immersive way. She takes the audience through these years 
+    of her musicality, one era at a time.</p>
+<p class="myparagraph">The eras shown below all have multiple different outfit options (with the exception of Reputation) and complex sets that
+    complete and enrich the concert experience. Photos are shown according to album release order, not according to set order. The show opens up
+    with the Lover (2019) era and closes out with the Midnights (2022) era.
+    The only album of Swift's that doesn't have a set is her 2006 debut album, "Taylor Swift."</p>
+
+
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="fearless-1.pdf">
+            <h3><center>Fearless Era</center></h3>
+            <p><center>Songs performed include hits "You Belong With Me" and "Love Story"</center></p>
+        </div>
+        <div class="gallery-item">
+            <img src="speaknow-1.pdf">
+            <h3><center>Speak Now Era</center></h3>
+            <p><center>There is only one song in this era: "Enchanted." She added fan-favorite "Long Live" after
+                the release of Speak Now TV, but took it off a few months later.
+            </center></p>
+        </div>
+        <div class="gallery-item">
+            <img src="red-1.pdf">
+            <h3><center>Red Era</center></h3>
+            <p><center>"I Knew You Were Trouble," "We Are Never Ever Getting Back Together," and "All Too Well (10 Minute Version)" are included in this era.</center></p>
+        </div>    
+        <div class="gallery-item">
+            <img src="1989-1.pdf">
+            <h3><center>1989 Era</center></h3>
+            <p><center>2014 smash hits "Shake it Off," "Bad Blood," and "Blank Space" all make an appearance during this set.
+            </center></p>
+        </div>
+        <div class="gallery-item">
+            <img src="rep-1.pdf">
+            <h3><center>Reputation Era</center></h3>
+            <p><center>Taylor hisses her hits "Delicate," "Look What You Made Me Do," and fan-fave "Don't Blame Me."</center></p>
+        </div>
+        <div class="gallery-item">
+            <img src="loverstrut-1.pdf">
+            <h3><center>Lover Era</center></h3>
+            <p><center>The show opens up with the fitting lyrics "it's been a long time coming" and dives into the summer anthem "Cruel Summer,"
+                along with "The Man," "Lover," and "You Need to Calm Down."
+            </center></p>
+        </div>
+         <div class="gallery-item">
+            <img src="folklore white dress-1.pdf">
+            <h3><center>Folklore Era</center></h3>
+            <p><center>One of Taylor's longest sets includes the songs "cardigan," "my tears ricochet," "august," and "illicit affairs."</center></p>
+        </div>
+        <div class="gallery-item">
+            <img src="evermore-1.pdf">
+            <h3><center>Evermore Era</center></h3>
+            <p><center>The sister set features songs "willow," "champagne problems," and the emotional tribute to her late grandmother "marjorie."</center></p>
+        </div>
+        <div class="gallery-item">
+            <img src="midnights-1.pdf">
+            <h3><center>Midnights Era</center></h3>
+            <p><center>The lengthy closing set dazzles with her hit "Anti-Hero," along with "Bejeweled" and "Karma." </center></p>
+        </div>
+        <div class="gallery-item">
+            <img src="ttpd-1.pdf">
+            <h3><center>The Tourtured Poets Department Era</center></h3>
+            <p><center>This newly-added set for the April 2024 release features songs "So High School,"
+                "Down Bad," and "I Can Do It With a Broken Heart."
+            </center></p>
+        </div>
+        
+    </section>
+
+    <footer>
+        <h2>Taylor Swift - The Eras Tour</h2>
+        <p>taylorswift.com</p>
+    </footer>
+
+    <script>
+        // Create a bouncing effect for the balls
+        const balls = document.querySelectorAll('.ball');
+        balls.forEach((ball, index) => {
+            ball.style.left = `${20 + index * 30}px`;
+            ball.style.top = `${Math.random() * 100}px`;
+            ball.style.animationDuration = `${1 + Math.random() * 2}s`;
+        });
+    </script>
+</body>
+</html>
+

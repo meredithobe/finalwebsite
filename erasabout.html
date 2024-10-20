@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About the Tour</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #ffe0b2;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6699;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            font-family: 'Avenir Light', sans-serif;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .info {
+            padding: 50px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .info-section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #ffcc00;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            position: relative;
+            transition: transform 0.3s;
+            font-family: 'Avenir Light';
+        }
+        .info-section:hover {
+            transform: scale(1.05);
+        }
+        .moving-graphic {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: move 10s infinite alternate;
+        }
+        @keyframes move {
+            0% { transform: translate(-50%, 0); }
+            100% { transform: translate(-50%, 20px); }
+        }
+        .ball {
+            width: 20px;
+            height: 20px;
+            background-color: #b4c6ff;
+            border-radius: 50%;
+            position: absolute;
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-20px); }
+        }
+        footer {
+            background-color: #ff6699;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-family: 'Avenir Light', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About the Tour</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="erasabout.html">About</a></li>
+                <li><a href="eras.html">The Eras</a></li>
+                <li><a href="tourculture.html">Tour Culture</a></li>
+                <li><a href="momentseras.html">Moments</a></li>
+                <li><a href="upcomingshows.html">Upcoming Shows</a></li>
+            </ul>
+        </nav>
+        <div class="moving-graphic">
+            <div class="ball" style="animation-delay: 0s;"></div>
+            <div class="ball" style="animation-delay: 0.2s;"></div>
+            <div class="ball" style="animation-delay: 0.4s;"></div>
+        </div>
+    </header>
+
+    <section class="info">
+        <h2>Overview</h2>
+        <div class="info-section">
+            <h3>The Set Up</h3>
+            <p>The concert is broken up into 10 different eras spanning across 18 years of music. Instead of just
+                the common "outfit change," the, set, outfits, props, and overall stage aesthetic changes completely to reflect
+                the prospective album- or rather referred to as- era. The concert set up is completed by backup dancers and singers, a live band,
+                and graphics on both the stage and backdrop. There are lots of lights, steam, and fire to complete the experience. 
+                One era's lights are so strong that people cities away can see them.
+        </div>
+        <h2>Some Notable Stage Sets</h2>
+        <div class="info-section">
+            <h3>The Lover House</h3>
+            <p>The Lover House is a X-Ray view of a fictional house that was brought up during Swift's music video for the title track "Lover."
+                The house features different colored rooms representing her seven different albums at the time of the Lover release. 
+                In the background on tour, the house burns down, symbolizing the end of that era of love as she once knew it.
+            </p>
+        </div>
+        <div class="info-section">
+            <h3>The folklore Cabin</h3>
+            <p>The folklore Cabin is a mystical set piece in which she kicks off the folklore set while sitting atop the roof. It's covered with moss and decorated with
+                delicate lighting, adding to the folklore experience.
+            </p>
+        </div>
+        <div class="info-section">
+            <h3>Champagne Problems Piano</h3>
+            <p>The Champagne Problems Piano is, to put it simple, a piano that Swift sits down at and performs evermore's "Champagne Problems." Similar to the folklore Cabin, it is 
+                decorated with moss and is the scene of the tour-iconic "champagne problems ovation," which has once lasted over 8 minutes.
+            </p>
+        </div>
+        <h2>More Info</h2>
+        <div class="info-section">
+            <h3>Opening Acts</h3>
+            <h4>Stars were made of artists during their time opening on the Eras stage. Opening artists include(d):</h4>
+                <p>Gracie Abrams</p>
+                <p>Sabrina Carpenter</p> 
+                <p>Paramore</p> 
+                <p>Phoebe Bridgers</p> 
+                <p>beabadoobee</p> 
+                <p>Girl in Red</p> 
+                <p>MUNA</p> 
+                <p>HAIM</p>
+                <p>Benson Boone</p>
+                <p>And More</p>
+        </div>
+        <div class="info-section">
+            <h3>Records Broken</h3>
+                <h4>The Eras Tour hasn't just been widely talked about, it has been a record-breaker. Accomplishments include:
+                </h4>
+                <p>Most shows at Wembley Stadium in a single tour</p>
+                <p>Most tickets sold in a single day</p>
+                <p>Hightest-grossing tour of all time (estimated $2.165 billion)</p>
+                <p>Highest-grossing concert movie of all time ($37 million on the first day)</p>
+                <p>Highest opening night attendees than any other female artist in the country</p>
+                <p>Among other accomplishments, The Eras Tour also boosted the economy and broke many attendance records at handfulls of stadiums.</p>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Taylor Swift - The Eras Tour</h2>
+        <p>taylorswift.com</p>
+    </footer>
+
+    <script>
+        // Create a bouncing effect for the balls
+        const balls = document.querySelectorAll('.ball');
+        balls.forEach((ball, index) => {
+            ball.style.left = `${20 + index * 30}px`;
+            ball.style.top = `${Math.random() * 100}px`;
+            ball.style.animationDuration = `${1 + Math.random() * 2}s`;
+        });
+    </script>
+</body>
+</html>
+
