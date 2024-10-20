@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Moments</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #e0f7fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6699;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            font-family: 'Avenir Light', sans-serif;
+        }
+        .top-text {
+            font-family: 'Avenir Light', sans-serif;
+            position: relative;
+            margin-left: 30px;
+            color:#42426c;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .attractions {
+            padding: 50px 20px;
+            position: relative;
+            font-family: 'Avenir';
+    
+                }
+        .attraction-item {
+            background-color: #ffcc00;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            padding: 20px;
+            margin: 20px 0;
+            transition: transform 0.3s;
+            position: relative;
+            font-family: 'Avenir Light', sans-serif;
+        }
+        .attraction-item:hover {
+            transform: scale(1.05);
+        }
+        .attraction-item img {
+            width: 80px;
+            height: 80px;
+            border-radius: 10px;
+            position: absolute;
+            top: -50px;
+            left: 20px;
+            border: 3px solid white;
+        }
+        footer {
+            background-color: #ff6699;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-family: 'Avenir Light', sans-serif;
+        }
+        .moving-graphic {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: move 10s infinite alternate;
+        }
+        @keyframes move {
+            0% { transform: translate(-50%, 0); }
+            100% { transform: translate(-50%, 30px); }
+        }
+        .ball {
+            width: 15px;
+            height: 15px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            position: absolute;
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-15px); }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tour Culture</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="erasabout.html">About</a></li>
+                <li><a href="eras.html">The Eras</a></li>
+                <li><a href="tourculture.html">Tour Culture</a></li>
+                <li><a href="momentseras.html">Moments</a></li>
+                <li><a href="upcomingshows.html">Upcoming Shows</a></li>
+            </ul>
+        </nav>
+        <div class="moving-graphic">
+            <div class="ball" style="animation-delay: 0s;"></div>
+            <div class="ball" style="animation-delay: 0.2s;"></div>
+            <div class="ball" style="animation-delay: 0.4s;"></div>
+        </div>
+    </header>
+<div class="top-text"> <h2>Explore the Action Both Within the Duration of the Show and Beyond</h2>
+</div>
+    <section class="attractions">
+        
+        <div class="attraction-item">
+            <img src="frienship bracelets-1.pdf" alt="Friendship Bracelets">
+            <h3>"So Make the Frienship Bracelets"</h3>
+            <p>A practice among fans along this tour has been exchanging handmade bracelets 
+                representing different albums and lyrics, which has created a vibrant culture of connection and 
+                community. This ritual stemmed from a lyric in Swift's song "You're On Your Own, Kid," and it
+                enhances the concert experience, allowing Swifties to express their love for Taylor 
+                while forging friendships and sharing unforgettable memories.</p>
+        </div>
+        <div class="attraction-item">
+            <img src="123lgb-1.pdf" alt="Chants">
+            <h3>Fan Chants</h3>
+            <p>During the show, fans participate in spirited chants that resonate throughout 
+                the venues, creating an electric atmosphere. From iconic lyrics to catchy phrases, 
+                these synchronized outbursts showcase the collective energy and passion of Swifties, 
+                turning each concert into a communal celebration of Taylor's music and legacy. Some of the most 
+                popular include "1, 2, 3, let's go b****" during "Delicate," and "you forgive, you forget, but you
+                never let it go" in "Bad Blood."</p>
+        </div>
+        <div class="attraction-item">
+            <img src="13hand.jpeg" alt="13 Hands">
+            <h3>Thirteen Hands</h3>
+            <p>Writing "13" on the back of their hands has special significance for Swifties, symbolizing 
+            their connection to Taylor. The trend was started by Taylor herself, and isn't just exclusive to the Eras Tour,
+            as it has been a practice spanning over many years. The number 13 is her favorite and also represents themes 
+            of luck, creativity, and community. Fans often use it as a way to show solidarity 
+            and express their love for Taylor, creating a sense of unity during her concerts.</p>
+        </div>
+        <div class="attraction-item">
+            <img src="22hat-1.pdf" alt="22 Hat">
+            <h3>The 22 Hat</h3>
+            <p>At the start of the Red era, Taylor wears a black rimmed hat while singing "22." During the song, she 
+                and her dancers make their way toward to front of the stage where a lucky fan is awaiting Taylor to give them
+                the aforementioned hat and share a special moment together. Most often the fan is a child, but it does range in
+                age and gender. Oftentimes the fan will "trade" for the hat by slipping a frienship bracelet onto Taylor's wrist.
+            </p>
+        </div>
+        <div class="attraction-item">
+            <img src="surprise song piano.pdf" alt="Sup Song">
+            <h3>Surprise Song O'Clock</h3>
+            <p>Surprise songs are a thrilling highlight of the Eras Tour, where Taylor 
+                performs unexpected tracks that aren't part of the main setlist. These songs 
+                often include fan favorites, deep cuts, or even rare gems, making each concert 
+                unique. The element of surprise adds excitement and anticipation, which has made
+                the surprise song section of the show a highly anticipated one of each stop. Fans 
+                not at the shows even tune in to live streams during this time to find out what
+                 Swift has up her sleeve for that particular night. Swift often invites a muscial 
+                guest to perform with her. Among these guests include Ed Sheeran, Sabrina Carpenter,
+                and Paramore's Haley Williams.</p>
+                </div>
+        <div class="attraction-item">
+            <img src="fearlesshearts-1.pdf" alt="Fearless Hearts">
+            <h3>The Fearless Heart</h3>
+            <p>The Fearless heart hands started many years ago on Swift's original Fearless tour. It happens during the song "Fearless,"
+                where Taylor and fans share a moment showing their love to each other by throwing up a heart above their heads with their hands. 
+                Many fans describe the moment like being in a stadium full of strangers turned friends.
+            </p>
+        </div>
+        <div class="attraction-item">
+            <img src="wristbands.jpeg" alt="Light Up Wristbands">
+            <h3>Light Up Wristbands</h3>
+            <p>Fans are given specially-coded wristbands upon entering the stadium that create an interactive
+                environment for fans during the show. These wristbands are programmed to respond to the show 
+                in a purposeful way to add to each set, song, and moment. The wristbands of the crowd band together 
+                to turn the stands into a canvas of moving color.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Taylor Swift - The Eras Tour</h2>
+        <p>taylorswift.com</p>
+    </footer>
+
+    <script>
+        // Create a bouncing effect for the balls
+        const balls = document.querySelectorAll('.ball');
+        balls.forEach((ball, index) => {
+            ball.style.left = `${20 + index * 30}px`;
+            ball.style.top = `${Math.random() * 100}px`;
+            ball.style.animationDuration = `${1 + Math.random() * 2}s`;
+        });
+    </script>
+</body>
+</html>

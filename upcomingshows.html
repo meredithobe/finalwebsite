@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Shows</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #ffe0b2;
+            font-family: 'Avenir Light', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6699;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-family: 'Avenir Light', sans-serif;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .team {
+            padding: 20px;
+            background-color: #ffcc00;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+        }
+        .team-member {
+            background-color: white;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+        }
+        .team-member:hover {
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: #ff6699;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-family: 'Avenir Light', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Upcoming Shows</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="erasabout.html">About</a></li>
+                <li><a href="eras.html">The Eras</a></li>
+                <li><a href="tourculture.html">Tour Culture</a></li>
+                <li><a href="momentseras.html">Moments</a></li>
+                <li><a href="upcomingshows.html">Upcoming Shows</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="about">
+        <h2>The Eras Train</h2>
+        <p>It's been 19 months since Taylor kicked off The Eras Tour in Glendale, AZ. Since then, 
+            she has performed to sold out stadiums across the globe, and by the time it wraps up 
+            this December, she will have put on over 150 shows.</p> 
+            <h3>Here are the last remaining stops on her tour.</h3>
+        <div class="moving-graphic">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </section>
+
+    <section class="team">
+        <h2>National & International Dates</h2>
+        <div class="grid-container">
+            <div class="team-member">
+                <img src="lovercurtains.jpg" alt="/" style="width:100%; border-radius:10px;">
+                <h3>Miami, FL</h3>
+                <p>Hard Rock Stadium</p>
+                <p>October 18, 19, & 20</p>
+            </div>
+            <div class="team-member">
+                <img src="lovercurtains.jpg" alt="/" style="width:100%; border-radius:10px;">
+                <h3>New Orleans, LA</h3>
+                <p>Caesars Superdome</p>
+                <p>October 25, 26, & 27</p>
+            </div>
+            <div class="team-member">
+                <img src="lovercurtains.jpg" alt="/" style="width:100%; border-radius:10px;">
+                <h3>Indianapolis, IN</h3>
+                <p>Lucas Oil Stadium</p>
+                <p>November 1, 2, & 3</p>
+            </div>
+            <div class="team-member">
+                <img src="lovercurtains.jpg" alt="/" style="width:100%; border-radius:10px;">
+                <h3>Toronto, ON</h3>
+                <p>Rogers Centre</p>
+                <p>November 14, 15, 16, 21, 22, & 23</p>
+            </div>
+            <div class="team-member">
+                <img src="lovercurtains.jpg" alt="/" style="width:100%; border-radius:10px;">
+                <h3>Vancouver, BC</h3>
+                <p>BC Place</p>
+                <p>December 6, 7, & 8</p>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Taylor Swift - The Eras Tour</h2>
+        <p>taylorswift.com</p>
+    </footer>
+</body>
+</html>
