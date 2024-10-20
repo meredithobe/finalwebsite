@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moments From the Tour</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #e0f7fa;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff6699;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+            font-family: 'Avenir Light';
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 50px 20px;
+            position: relative;
+        }
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+            font-family: 'Avenir Light';
+            color:#42426c;
+            text-align: center;
+        }
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+        .gallery-item img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.5s;
+        }
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .moving-graphic {
+            position: absolute;
+            top: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: move 10s infinite alternate;
+        }
+        @keyframes move {
+            0% { transform: translate(-50%, 0); }
+            100% { transform: translate(-50%, 30px); }
+        }
+        .ball {
+            width: 15px;
+            height: 15px;
+            background-color: #ffcc00;
+            border-radius: 50%;
+            position: absolute;
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(-15px); }
+        }
+        footer {
+            background-color: #ff6699;
+            text-align: center;
+            padding: 20px;
+            color: white;
+            font-family: 'Avenir Light', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Moments From the Tour</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="erasabout.html">About</a></li>
+                <li><a href="eras.html">The Eras</a></li>
+                <li><a href="tourculture.html">Tour Culture</a></li>
+                <li><a href="momentseras.html">Moments</a></li>
+                <li><a href="upcomingshows.html">Upcoming Shows</a></li>
+            </ul>
+        </nav>
+        <div class="moving-graphic">
+            <div class="ball" style="animation-delay: 0s;"></div>
+            <div class="ball" style="animation-delay: 0.2s;"></div>
+            <div class="ball" style="animation-delay: 0.4s;"></div>
+        </div>
+    </header>
+
+    <section class="gallery">
+        <div class="gallery-item">
+            <img src="1989tvannouncement-1.pdf" alt="1989 TV Announcement">
+            <h3>Taylor's Version Announcements</h3>
+            <p>Taylor surprise anounced the release of her re-recorded album, "1989 (Taylor's Version)" in August 2023.
+                She did the same for "Speak Now (Taylor's Version)" earlier that summer in May.
+            </p>
+        </div>
+        <div class="gallery-item">
+            <img src="i can see you cast-1.pdf" alt="I Can See You Cast">
+            <h3>Music Video Premiere</h3>
+            <p>On the release day of Speak Now TV, Taylor surprise premiered the music video 
+                for her vault song "I Can See You" at her Kansas City concert. She brought the cast of said 
+                video on stage afterwards, which included actors Joey King and Taylor Lautner.
+            </p>
+        </div>
+        <div class="gallery-item">
+            <img src="icespice-1.pdf" alt="Ice Spice Karma">
+            <h3>Ice Spice Appearance</h3>
+            <p>Taylor brought out Ice Spice to perform their remix of Swift's song "Karma" together after 
+                live-premiering the music video.</p>
+        </div>
+        <div class="gallery-item">
+            <img src="rain show-1.pdf" alt="Rain Shows">
+            <h3>Rain Shows</h3>
+            <p>Taylor is the definition of "the show must go on." To know Taylor is to know how much 
+                she loves a rain show, and she got her fair share of those during the span of this tour. One
+                show in particular was raining so much that some of her equipment got ruined in the process.
+            </p>
+        </div>
+        <div class="gallery-item">
+            <img src="biankahat-1.pdf" alt="Bianka Bryant Hat">
+            <h3>Bianka Bryant Gets the 22 Hat</h3>
+            <p>The daughter of late NBA legend Kobe Bryant was the recipient of the 22 hat in Los Angeles. This moment was featured in
+                the concert film.
+            </p>
+        </div>
+        <div class="gallery-item">
+            <img src="eras movie poster-1.pdf" alt="Eras Movie">
+            <h3>The Eras Tour Movie</h3>
+            <p>Taylor released a concert film for the tour on October 13 (there's that number again!) of 2023.
+                The film was released in theaters and fans could purchase a special Eras-themed souvenier popcorn bucket and cup.
+            </p>
+        </div>
+        <div class="gallery-item">
+            <img src="ttpd set added-1.pdf" alt="TTPD Added">
+            <h3>The Tortured Poets Department Set Added</h3>
+            <p>After Swift released her 11th studio album back in April, she debuted her shiny new set for this
+                new era at the next show. Fans speculated whether she would make this move or not, and while exciting it did come at 
+                the expense of a few songs in other eras.
+            </p>
+        </div>
+        <div class="gallery-item">
+            <img src="travisttpd-1.pdf" alt="Travis Kelce TTPD">
+            <h3>Travis Kelce Stage Debut</h3>
+            <p>The timeline of Taylor and Travis' relationship has been a wild ride, but no one expected
+                to see the Chief's star on the Eras Tour stage. He dressed up, got into character, and even carried
+                an "unconcious" Swift off the stage.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Taylor Swift - The Eras Tour</h2>
+        <p>taylorswift.com</p>
+    </footer>
+
+    <script>
+        // Create a bouncing effect for the balls
+        const balls = document.querySelectorAll('.ball');
+        balls.forEach((ball, index) => {
+            ball.style.left = `${20 + index * 30}px`;
+            ball.style.top = `${Math.random() * 100}px`;
+            ball.style.animationDuration = `${1 + Math.random() * 2}s`;
+        });
+    </script>
+</body>
+</html>

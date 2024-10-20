@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Final Project</title>
+    <style>
+        body {
+            font-family: 'Avenir Light', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #ffcc00;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            color: #ff6699;}
+
+        .hero {
+            background: linear-gradient(to right, #ff6699, #ffcc00);
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        .slideshow-container {
+            position: relative;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .slide {
+            display: none;
+        }
+
+        .slide img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .text {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.8);
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .prev {
+            left: 10px;
+        }
+
+        .next {
+            right: 10px;
+        }
+
+        .about {
+            padding: 50px 20px;
+            text-align: center;
+            background-color: #e0f7fa;
+        }
+
+        .moving-graphic {
+            position: relative;
+            height: 100px;
+            overflow: hidden;
+        }
+
+        .circle {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #ff6699;
+            animation: move 4s infinite;
+        }
+
+        .circle:nth-child(2) {
+            background-color: #d9ff66;
+            animation-delay: 1s;
+        }
+
+        .circle:nth-child(3) {
+            background-color: #6699ff;
+            animation-delay: 2s;
+        }
+
+        @keyframes move {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-50px); }
+            100% { transform: translateY(0); }
+        }
+
+        footer {
+            background-color: #ffcc00;
+            text-align: center;
+            padding: 20px;
+            font-family: 'Avenir Light', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Taylor Swift - The Eras Tour</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="erasabout.html">About</a></li>
+                <li><a href="eras.html">The Eras</a></li>
+                <li><a href="tourculture.html">Tour Culture</a></li>
+                <li><a href="momentseras.html">Moments</a></li>
+                <li><a href="upcomingshows.html">Upcoming Shows</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h2>Dive into the Universe that is Taylor Swift's World-Famous Tour</h2>
+        <p>This highly-discussed tour that began in March 2023 is coming to a close, let's take a look at everything that has made it what it is.</p>
+    </section>
+
+    <section id="gallery" class="slideshow-container">
+        <div class="slideshow">
+            <div class="slide fade">
+                <img src="loverstage.jpg" alt="Stage During the Lover Era">
+                <div class="text">Stage During the Lover Era</div>
+            </div>
+            <div class="slide fade">
+                <img src="rep.jpeg" alt="Fearless Heart">
+                <div class="text">Taylor Hits a Note During the Reputation Era</div>
+            </div>
+            <div class="slide fade">
+                <img src="fans walking.jpg" alt="Fans Walking">
+                <div class="text">Fans Dazzle in Their Eras Outfits</div>
+            </div>
+            <div class="slide fade">
+                <img src="folklore set.jpeg" alt="Folklore Set">
+                <div class="text">The Folklore Cabin</div>
+            </div>
+            <div class="slide fade">
+                <img src="lightss.jpeg" alt="Bracelet Lights">
+                <div class="text">Light Up Wristbands Paint the Crowd</div>
+            </div>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>All Around the World</h2>
+        <p>The tour that started in Arizona later spread its wings and showed its dazzling lights
+            in 21 other countries. </p>
+        <div class="moving-graphic">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <h2>Taylor Swift - The Eras Tour</h2>
+        <p>taylorswift.com</p>
+    </footer>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; // Hide all slides
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1; // Loop back to the first slide
+            }
+            slides[slideIndex - 1].style.display = "block"; // Show the current slide
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds
+        }
+
+        function changeSlide(n) {
+            slideIndex += n;
+            let slides = document.getElementsByClassName("slide");
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            if (slideIndex < 1) {
+                slideIndex = slides.length;
+            }
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none"; // Hide all slides
+            }
+            slides[slideIndex - 1].style.display = "block"; // Show the selected slide
+        }
+    </script>
+</body>
+</html>
